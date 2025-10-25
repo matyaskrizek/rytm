@@ -1,2 +1,12 @@
+
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        maven { url "https://repo.spring.io/release" }
+    }
+}
+
 rootProject.name = "service-user"
 

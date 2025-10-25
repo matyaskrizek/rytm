@@ -16,7 +16,8 @@ dependencies {
     // Optional: Spring web
     implementation 'org.springframework:spring-web:6.1.16'
     implementation 'org.springframework.boot:spring-boot-starter:3.3.2'
-    //implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa:3.3.2')
+    //implementation 'org.springframework.boot:spring-boot-starter-security:3.3.2'
 
     // Lombok
     compileOnly 'org.projectlombok:lombok:1.18.30'
@@ -29,6 +30,13 @@ dependencies {
 
     // For testing
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+
+    // hibernate
+    implementation 'org.hibernate:hibernate-validator:8.0.0.Final'
+    implementation('org.postgresql:postgresql:42.2.27.jre7')
+    implementation('jakarta.persistence:jakarta.persistence-com.rytm.user.api:3.1.0')
+    implementation('org.hibernate:hibernate-core:6.1.6.Final')
+
 }
 
 tasks.test {

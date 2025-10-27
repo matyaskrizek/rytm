@@ -4,9 +4,10 @@ import com.rytm.user.DTO.UserDTO;
 import common.util.DTOValidator;
 import common.util.exceptions.DTOValidationException;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserDTOValidator implements DTOValidator<UserDTO> {
-
     @Override
     public void validate(UserDTO toValidate) {
         DTOValidationException errors = new DTOValidationException("UserDTOValidation exception");
@@ -21,5 +22,4 @@ public class UserDTOValidator implements DTOValidator<UserDTO> {
         }
         errors.throwIfErrors();
     }
-
 }

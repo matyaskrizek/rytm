@@ -1,4 +1,4 @@
-package com.rytm.user.doa;
+package com.rytm.user.dao;
 
 import com.rytm.user.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -8,10 +8,14 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-@Repository()
+@Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 
     @Query("SELECT ua FROM User ua WHERE ua.username = :username")
     Optional<User> findUserByUsername(@Param("username") String username);
+
+    @Query("SELECT ua FROM User ua WHERE ua.email = :email")
+    Optional<User> findUserByEmail(@Param("email") String email);
+
 
 }

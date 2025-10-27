@@ -6,11 +6,10 @@ import lombok.Setter;
 
 @Entity
 @Getter
-@Table(name = "Users")
+@Table(name = "t_users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Setter
     private Long id;
 
     @Setter

@@ -1,43 +1,44 @@
 plugins {
-    id("java")
+    id 'java'
+    id 'idea'
+    id 'jacoco'
+    id 'org.springframework.boot' version '3.3.2'
+    id 'io.spring.dependency-management' version '1.1.5'
 }
 
-group = "org.example"
+group = 'springio'
 version = "1.0-SNAPSHOT"
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    // Core Spring Framework
-    implementation 'org.springframework:spring-context:6.1.16'
+    // Use Spring Boot starters only
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    // implementation 'org.springframework.boot:spring-boot-starter-security' // optional
 
-    // Optional: Spring web
-    implementation 'org.springframework:spring-web:6.1.16'
-    implementation 'org.springframework.boot:spring-boot-starter:3.3.2'
-    implementation('org.springframework.boot:spring-boot-starter-data-jpa:3.3.2')
-    //implementation 'org.springframework.boot:spring-boot-starter-security:3.3.2'
+    // Database + Hibernate
+    implementation 'org.postgresql:postgresql:42.7.7.jre7'
+
+    // Swagger / OpenAPI
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
 
     // Lombok
     compileOnly 'org.projectlombok:lombok:1.18.30'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
 
-
-    // Swagger / OpenAPI
-    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
-
-
-    // For testing
+    // Testing
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
-
-    // hibernate
-    implementation 'org.hibernate:hibernate-validator:8.0.0.Final'
-    implementation('org.postgresql:postgresql:42.2.27.jre7')
-    implementation('jakarta.persistence:jakarta.persistence-com.rytm.user.api:3.1.0')
-    implementation('org.hibernate:hibernate-core:6.1.6.Final')
-
 }
+
 
 tasks.test {
     useJUnitPlatform()

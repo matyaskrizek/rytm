@@ -2,7 +2,11 @@ package com.rytm.user.converters;
 
 import com.rytm.user.DTO.UserDTO;
 import com.rytm.user.domain.User;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Component;
 
+@Component
+@AllArgsConstructor
 public class UserDTOConverter {
     public UserDTO convertToDTO(User user) {
         return UserDTO.builder()

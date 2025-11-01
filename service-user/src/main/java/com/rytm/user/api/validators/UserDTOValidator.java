@@ -15,10 +15,10 @@ public class UserDTOValidator implements DTOValidator<UserDTO> {
             errors.addError("username", "username should not be empty or null");
         }
         if(StringUtils.isBlank(toValidate.getEmail())) {
-            errors.addError("username", "username should not be empty or null");
+            errors.addError("email", "email should not be empty or null");
         }
         if(StringUtils.isBlank(toValidate.getPassword())) {
-            errors.addError("username", "username should not be empty or null");
+            errors.addError("password", "password should not be empty or null");
         }
         errors.throwIfErrors();
     }

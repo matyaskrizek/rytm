@@ -1,6 +1,6 @@
 package com.rytm.user.service;
 
-import com.rytm.user.DTO.UserDTO;
+import com.rytm.api.user.UserDTO;
 import com.rytm.user.converters.UserDTOConverter;
 import com.rytm.user.dao.UserRepository;
 import com.rytm.user.domain.User;

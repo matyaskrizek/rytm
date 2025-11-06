@@ -1,4 +1,4 @@
-package common.util.exceptions;
+package com.rytm.util.exceptions;
 
 import lombok.Getter;
 import lombok.ToString;

@@ -1,8 +1,8 @@
-package common.util.exceptions;
+package com.rytm.util.exceptions;
 
-import common.util.errors.ErrorDTO;
-import common.util.errors.ErrorsDTO;
-import common.util.errors.ErrorDetailDTO;
+import com.rytm.util.errors.ErrorDTO;
+import com.rytm.util.errors.ErrorsDTO;
+import com.rytm.util.errors.ErrorDetailDTO;
 import org.springframework.http.HttpStatus;
 
 import java.util.*;

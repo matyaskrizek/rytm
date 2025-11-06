@@ -1,4 +1,4 @@
-package common.util.errors;
+package com.rytm.util.errors;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;

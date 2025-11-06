@@ -1,8 +1,8 @@
 package com.rytm.user.api.validators;
 
-import com.rytm.user.DTO.UserDTO;
-import common.util.errors.ErrorDTO;
-import common.util.exceptions.DTOValidationException;
+import com.rytm.api.user.UserDTO;
+import com.rytm.util.errors.ErrorDTO;
+import com.rytm.util.exceptions.DTOValidationException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

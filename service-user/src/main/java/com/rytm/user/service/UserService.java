@@ -1,6 +1,6 @@
 package com.rytm.user.service;
 
-import com.rytm.user.DTO.UserDTO;
+import com.rytm.api.user.UserDTO;
 import com.rytm.user.domain.User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

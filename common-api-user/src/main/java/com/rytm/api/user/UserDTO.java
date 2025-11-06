@@ -1,4 +1,4 @@
-package com.rytm.user.DTO;
+package com.rytm.api.user;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,4 +1,4 @@
-package common.util.errors;
+package com.rytm.util.errors;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

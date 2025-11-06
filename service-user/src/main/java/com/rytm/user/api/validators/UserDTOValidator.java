@@ -1,8 +1,8 @@
 package com.rytm.user.api.validators;
 
-import com.rytm.user.DTO.UserDTO;
-import common.util.DTOValidator;
-import common.util.exceptions.DTOValidationException;
+import com.rytm.api.user.UserDTO;
+import com.rytm.util.DTOValidator;
+import com.rytm.util.exceptions.DTOValidationException;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 

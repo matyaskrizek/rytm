@@ -1,11 +1,11 @@
 package com.rytm.user.api;
 
-import com.rytm.user.DTO.UserDTO;
+import com.rytm.api.user.UserDTO;
 import com.rytm.user.api.validators.UserDTOValidator;
 import com.rytm.user.converters.UserDTOConverter;
 import com.rytm.user.domain.User;
 import com.rytm.user.service.UserService;
-import common.util.errors.ErrorDTO;
+import com.rytm.util.errors.ErrorDTO;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,11 +1,11 @@
 package com.rytm.user.api;
 
-import com.rytm.user.DTO.UserDTO;
+import com.rytm.api.user.UserDTO;
+import com.rytm.util.errors.ErrorDTO;
 import com.rytm.user.domain.User;
 import com.rytm.user.service.UserService;
 import com.rytm.user.api.validators.UserDTOValidator;
 import com.rytm.user.converters.UserDTOConverter;
-import common.util.errors.ErrorDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

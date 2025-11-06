@@ -1,4 +1,4 @@
-package common.util;
+package com.rytm.util;
 
 public interface DTOValidator<T> {
 

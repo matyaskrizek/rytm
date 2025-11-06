@@ -1,6 +1,6 @@
 package com.rytm.user.converters;
 
-import com.rytm.user.DTO.UserDTO;
+import com.rytm.api.user.UserDTO;
 import com.rytm.user.domain.User;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
